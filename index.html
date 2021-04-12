@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/dc7bf59d0f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Login Authenticator</title>
+  </head>
+  <body class ="">
+    <button class="login">Login</button>
+
+    <div class="modal hidden">
+      <span class="close" title="Close Modal">&times;</span>
+      <div class="login-error-msg-holder">
+        <p class="login-error-msg">
+          Invalid username
+          <span class="error-msg-second-line">and/or password</span>
+        </p>
+      </div>
+      
+      <div class="emails">
+        <form class = login-form>
+        <h3>Username</h3>
+        <input type="text" name ="email" placeholder="Enter Email" class="login_box email" />
+      </div>
+      <h3>Passwords</h3>
+      <div class="passwords">
+        <input
+          type="password"
+          name ="password"
+          placeholder="Enter Password "
+          class="login_box password"
+        />
+      </div>
+      <button type="submit" class="loginbtn">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" /> Remember me
+      </label>
+    </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
